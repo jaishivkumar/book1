@@ -1,3 +1,4 @@
+
 const bookModel = require('../model/booksModel')
 const userModel = require('../model/userModel')
 const reviewsModel = require('../model/reviewModel')
@@ -114,7 +115,7 @@ const getBook = async function (req, res) {
 
         let obj = { isDeleted: false }
 
-        let { userId, category, subcategory } = data;
+        let { userId, category, subcategory , } = data;
 
         if (userId) {
             if (!isValidObjectId(userId)) {
@@ -147,6 +148,7 @@ const getBook = async function (req, res) {
             }
             obj.subcategory = subcategory
         }
+        
 
         let findBook = await bookModel.find(obj).select({ title: 1, category: 1, excerpt: 1, userId: 1, reviews: 1, releasedAt: 1 }).sort({ title: 1 })
         if (findBook.length == 0) {
