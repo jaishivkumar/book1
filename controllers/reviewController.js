@@ -1,6 +1,6 @@
-const bookModel = require('../model/booksModel')
-const reviewsModel = require('../model/reviewModel')
-const { isValid, isValidObjectId, isValidRequestBody, } = require('../utility/validation')
+const bookModel = require('../models/booksModel')
+const reviewsModel = require('../models/reviewModel')
+const { isValid, isValidObjectId, isValidRequestBody, } = require('../validation/validation')
 
 
 

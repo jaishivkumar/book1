@@ -1,7 +1,7 @@
 
-const bookModel = require('../model/booksModel')
-const userModel = require('../model/userModel')
-const reviewsModel = require('../model/reviewModel')
+const bookModel = require('../models/booksModel')
+const userModel = require('../models/userModel')
+const reviewsModel = require('../models/reviewModel')
 
 const {
     isValid,
@@ -9,7 +9,7 @@ const {
     isValidISBN,
     isValidObjectId,
     isValidRequestBody,
-                         } = require("../utility/validation")
+                         } = require("../validation/validation")
 
 
 

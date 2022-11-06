@@ -3,7 +3,7 @@ const router =express.Router();
 const userController =require('../controllers/userController')
 const bookController =require('../controllers/bookController')
 const reviewController = require('../controllers/reviewController')
-const auth =require('../middleware/auth')
+const auth =require('../middlewares/auth')
 
 
 /*_____________________________--====> USER API <====----___________________________________*/
